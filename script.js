@@ -34,6 +34,7 @@ function checkTime(){
     var currentTime = moment().format('H')
     //make currentTime a number
     currentTime = Number(currentTime) 
+    console.log(currentTime)
     if(currentTime === 9){
         timeIs9.css("background-color", "red");
     }//red 
@@ -90,11 +91,9 @@ function checkTime(){
     }//green
     if(currentTime === 15){
         timeIs3.css("background-color", "red")
-        console.log('now you gotta change color')
     }
     else if(currentTime > 15 ){
-        console.log('change the color at 4?')
-        timeIs3.css("background-color", "#grey")   
+        timeIs3.css("background-color", "grey")   
     }
     else{
         timeIs3.css("background-color", "#50c878")
@@ -110,11 +109,10 @@ function checkTime(){
     }//green
     if(currentTime === 17){
         timeIs5.css("background-color", "red")
-        console.log('now you gotta change color')
+        
     }
     else if(currentTime > 17 ){
-        console.log('change the color at 4?')
-        timeIs5.css("background-color", "#grey")   
+        timeIs5.css("background-color", "grey")   
     }
     else{
         timeIs5.css("background-color", "#50c878")

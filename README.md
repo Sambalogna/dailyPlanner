@@ -91,6 +91,30 @@ I didn't access local storage in the most efficient way, but I accessed it based
  }; 
  var key9 = localStorage.key(6);
  var value9 = localStorage.getItem(key9)
+
+ //jquery made positioning the value very simple.  
  timeIs9.attr('placeholder',`${value9}`)
 
+````
+I utilized bootstrap to get the containers and inputs. I made a class of container for an initial div row. Then utilizing a template for input boxes that had a single span tag label on the left of the input box, I duplicated it to mirror the styling for the save area. Then Repeteadly used this styling for ever hour. 
+````HTML
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <!-- 9AM -->
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">09:00AM</span>
+            <input id="0900" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"><button id="delete9"><img src="assets/images/png-transparent-computer-icons-icon-design-iconfinder-save-icon-miscellaneous-saving-rectangle.png" height="40px" width="40px"/></button></span>
+          </div>
+        </div>
+        <!-- 10AM -->
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">10:00AM</span>
+            <input id = "1000" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"><button id="delete10"><img src="/Assets/Images/png-transparent-computer-icons-icon-design-iconfinder-save-icon-miscellaneous-saving-rectangle.png" height="40px" width="40px"/></button></span>
+          </div>
+        </div>
 ````

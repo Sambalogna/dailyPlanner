@@ -73,12 +73,24 @@ function checkTime(){
         timeIs5.css("background-color", "#50c878")
     }
 }
+//instantly checks values
 checkTime();
+//makes the hour colors refresh every minute
 setInterval(checkTime, 60000);
 
 ````
 
+I didn't access local storage in the most efficient way, but I accessed it based on the inputs position on the storage array. I initially took the value of the first input and console logged it to ensure I was recieving the value, then I would set that item to the key value pair 'nine', val9. Through trial and error I found that to be that my input for 9AM was the 6th key out of the 9 item array.I did this for each input. 
 ````Javascript
-
+ btn9.onclick = function() {
+    var val9 = input9.value;
+    console.log(val9)
+    if(val9){
+         localStorage.setItem('nine', val9)
+     }
+ }; 
+ var key9 = localStorage.key(6);
+ var value9 = localStorage.getItem(key9)
+ timeIs9.attr('placeholder',`${value9}`)
 
 ````

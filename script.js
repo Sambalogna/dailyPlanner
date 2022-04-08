@@ -9,7 +9,15 @@ var timeIs3 = $("#1500")
 var timeIs4 = $("#1600")
 var timeIs5 = $("#1700")
 //button event listener
-document.getElementById('delete').addEventListener('click', consoleCool)
+document.getElementById('delete9').addEventListener('click', consoleCool)
+document.getElementById('delete10').addEventListener('click', consoleCool)
+document.getElementById('delete11').addEventListener('click', consoleCool)
+document.getElementById('delete12').addEventListener('click', consoleCool)
+document.getElementById('delete1').addEventListener('click', consoleCool)
+document.getElementById('delete2').addEventListener('click', consoleCool)
+document.getElementById('delete3').addEventListener('click', consoleCool)
+document.getElementById('delete4').addEventListener('click', consoleCool)
+document.getElementById('delete5').addEventListener('click', consoleCool)
 function consoleCool() {
 console.log('yo you deleted something')
 }
